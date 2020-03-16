@@ -1,0 +1,653 @@
+@import 'fonts.css';
+
+body {
+    font-family: 'Open Sans';
+}
+
+.logo {
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+ul, li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-bar {
+    color: #212121;
+    padding: 40px 0;
+    background: #ffffff;
+
+}
+
+.menu__item {
+    margin-left: 37px;
+}
+
+.menu__item a {
+    font-family: 'Open Sans Semibold';
+    font-size: 20px;
+    color: #212121;
+}
+
+.menu__item a:hover {
+    text-decoration: none;
+    color: #636363;
+}
+
+/*Header*/
+
+.header {
+    background-image: url('../img/header.png');
+    background-size: cover;
+    background-position: 0 100%;
+    padding: 180px 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+.header__title {
+    font-size: 60px;
+    font-family: 'Open Sans Semibold';
+}
+
+.header__text {
+    font-size: 22px;
+    font-family: 'Open Sans Regular';
+    margin-bottom: 104px;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 35px;
+    margin: 0 10px;
+    transition: 0.3s;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #00897b;
+    border: 2px solid #00897b;
+}
+
+.button:hover {
+    background: transparent;
+    border: 2px solid white;
+}
+
+/*About us*/
+
+.about {
+    background-color: #ffffff;
+    color: black;
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 125px;
+}
+
+.about_title {
+    font-size: 30px;
+    font-family: 'Open Sans Bold';
+}
+
+.about__text {
+    font-size: 15px;
+    margin-bottom: 110px;
+    color: #212121;
+}
+
+.about_h3 {
+    font-size: 20px;
+    font-family: 'Open Sans Semibold';
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.about_text {
+    font-size: 15px;
+    font-family: 'Open Sans Regular';
+}
+
+/*Our services*/
+.services {
+    background-color: #e4fdf9;
+    color: black;
+    text-align: center;
+    padding-top: 165px;
+    padding-bottom: 125px;
+}
+
+.our_card {
+    background-color: #ffffff; 
+    padding: 50px 40px 40px;
+    transition: 0.3s;
+    margin-bottom: 30px;
+    
+}
+
+.icon {
+    font-size: 60px;
+    color: black;
+    margin-top: 60px;
+    transition: 0.3s;
+}
+
+.button-cervices {
+    text-transform: uppercase;
+    color: #212121;
+    font-family: 'Open Sans Bold';
+    background: transparent;
+    border: 1px solid #212121;
+    margin: 45px 0 50px 0;
+    padding: 14px 14px;
+    transition: 0.3s;
+}
+
+.our_card:hover {
+    background: #00897b;
+    color: #ffffff;
+    box-shadow: 0 10px 12px -3px rgba(0, 0, 0, 0.26 )
+}
+
+.our_card:hover .icon {
+    color: white;
+    
+}
+
+.our_card:hover .button-cervices {
+    color: white;
+    border: 1px solid white;
+}
+
+.button-cervices:hover {
+    cursor: pointer;
+}
+
+/*Porstfolio*/
+.portfolio {
+    padding-top: 130px;
+    padding-bottom: 140px;
+    text-align: center;
+}
+
+.portfolio button:hover,
+.focused {
+    color: black;
+    border: 2px solid #00897b;
+    background: transparent;
+}
+
+.portfolio img {
+    margin-bottom: 30px;
+}
+
+.filter {
+    padding: 120px 0;
+    
+}
+
+div[filter]:hover img {
+    transition: 0.3s;
+    filter: brightness(50%);
+
+}
+
+.text {
+    display: none;
+}
+
+div[filter]:hover .text {
+    display: block;
+    width: 100%;
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    text-align: center;
+    z-index: 3;
+}
+
+/*Pricing Plan*/
+.pricing {
+    text-align: center;
+    padding-top: 165px;
+    padding-bottom: 125px;
+    background: #f0f1f1;
+}
+
+.price {
+    background: #fff;
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+
+.price:hover {
+    box-shadow: 0 0 11px 3px rgba(0, 0, 0, 0.39);
+}
+
+.price__head {
+    background-image: url(../img/pricing.png);
+    padding-top: 40px;
+    padding-bottom: 65px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height: 211px;
+    color: white;
+}
+
+.price__head {
+    font-size: 50px;
+}
+
+.price__head sup {
+    font-size: 25px;
+    vertical-align: middle;
+}
+
+.price__head sub {
+    font-size: 17px;
+    vertical-align: middle;
+}
+.price__head p {
+    font-size: 25px;
+}
+.price__body {
+    font-size: 17px;
+    color: #212121;
+    
+    
+}
+
+.price__body ul li {
+    border-bottom: 1px solid #bfbfbf;
+    max-width: 175px;
+    padding-top: 28px;
+    padding-bottom: 12px;
+    margin: 0 auto;
+    
+}
+
+.price__footer {
+    padding: 60px 0;
+}
+
+.price__footer button {
+    cursor: pointer;
+    border: 2px solid #212121;
+    color: #212121;
+    background: transparent;
+    padding: 15px 30px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.price__footer button:hover {
+    text-transform: uppercase;
+    color: #fff;
+    background: #00897b;
+    border: 2px solid #00897b;
+}
+
+/*Team members*/
+.team {
+    text-align: center;
+    padding-top: 165px;
+    padding-bottom: 125px;
+    color: #212121;
+    background: #ffffff;
+}
+
+.team h4 {
+    font-size: 20px;
+    font-family: 'Open Sans Semibold';
+    margin-top: 30px;
+}
+
+.team p {
+    font-size: 15px;
+    font-family: 'OpenSans Regular';
+    margin-bottom: 30px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+}
+
+.icons i:nth-child(1) {
+    color: #f0f1f1;
+}
+
+.icons i:nth-child(2) {
+    color: #00897b;
+}
+
+.icons a i {
+    transition: 0.3s;
+}
+
+.icons a:hover i:nth-child(1) {
+    color: #3949ab;
+}
+
+.icons a:hover i:nth-child(2) {
+    color: #ffffff;
+}
+
+.multyple-items {
+    margin-top: 125px;
+}
+
+.slick-dots {
+    margin-top: 115px;
+    display: flex;
+    justify-content: center;
+}
+
+.slick-dots button {
+   background: #00897b;
+   border: none;
+   border-radius: 50%;
+   font-size: 0;
+   height: 15px;
+   width: 15px;
+   margin: 5px;
+   padding: 0;
+}
+
+.slick-dots li[class="slick-active"] button {
+    background: #3949ab;
+}
+
+/*Blog*/
+.blog_text {
+    margin-bottom: 115px;
+}
+.left > div:first-child {
+    order: 1;
+}
+
+.left > div:last-child {
+    order: 2;
+}
+
+.right > div:first-child {
+    order: 2;
+}
+
+.right > div:last-child {
+    order: 1;
+}
+
+.blog {
+    text-align: left;
+    padding-top: 60px;
+}
+.blog a{
+    color: #212121;
+    font-size: 25px;
+    font-family: 'Open Sans Semibold';
+    cursor: pointer;
+}
+
+.blog a:hover{
+    color: #00897b;
+}
+
+.blog span {
+    font-size: 17px;
+    font-family: 'Open Sans Semibold';
+    margin-right: 35px;
+}
+
+.blog i {
+    margin-right: 15px;
+}
+
+.blog div {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.blog p {
+    font-size: 15px;
+}
+
+.button_blog {
+    width: 220px;
+    height: 70px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 20px;
+    margin-top: 125px;
+    border: none;
+    background: #00897b;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+/*Contact Us*/
+
+.footer {
+    text-align: center;
+    padding: 165px 0 125px 0;
+    background-image: url(../img/footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+
+.footer p {
+    color: #ffffff;
+}
+
+.fa-map-marker-alt, .fa-phone-alt, .fa-envelope {
+    font-size: 62px;
+    color: #ffffff;
+}
+
+.circle {
+    background-color: #3949ab;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 35px;
+}
+
+.footer .col-xl-3 p {
+    font-size: 20px;
+    margin-bottom: 85px;
+}
+
+.footer input, textarea {
+    padding: 30px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+}
+
+.footer input:focus, textarea:focus {
+    outline: none;
+}
+
+.footer textarea {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    resize: none;
+}
+
+.footer button {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #212121;
+    padding: 20px 85px;
+    border-radius: 10px;
+    background: #ffffff;
+    border: none;
+    transition: 0.3s;
+}
+
+.footer button:hover {
+    opacity: 0.6;
+}
+
+.rights {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Button "to top"*/
+#toTop {
+    z-index: 999;
+    color: #212121;
+    display: none;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 3px;
+    border: none;
+    background: #00897b;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+
+}
+
+.menu-icon {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    nav {
+        display: none;
+    }
+    .logo-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu-icon {
+        display: block;
+        background: #00897b;
+        border: none;
+        width: 40px;
+        height: 50px;
+        cursor: pointer;
+        font-size: 25px;
+        margin-right: 50px;
+        padding: 5px;
+    }
+    .blog {
+        padding-top: 10px;
+    }
+
+    .footer input, .footer textarea {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        padding: 5px;
+    }
+
+    .header__title {
+        font-size: 45px;
+    }
+
+    .header__text {
+        margin-bottom: 20px;
+    }
+
+    .button {
+        margin-bottom: 10px;
+    }
+
+    .about {
+        padding: 20px;
+    }
+
+    .about__text {
+        margin-bottom: 20px;
+    }
+
+    .services {
+        padding: 20px;
+        
+    }
+
+    .portfolio {
+        padding: 20px;
+        
+    }
+
+    .filter {
+        padding: 10px;
+    }
+
+    .pricing {
+        padding: 20px;
+    }
+
+    .team {
+        padding: 20px 0;
+    }
+
+    .team img {
+        max-width: 320px;
+        margin-left: 20px;
+    }
+
+    .slick-dots {
+        margin-top: 10px;
+    }
+
+    #blog img {
+        margin: 5px;
+    }
+
+    .blog-item .blog {
+        width: 100%;
+    }
+
+    .button_blog {
+        margin-top: 20px;
+    }
+
+    .left > div:first-child {
+        order: 1;
+    }
+    
+    .left > div:last-child {
+        order: 2;
+    }
+
+    .blog i {
+        margin-right: 5px;
+    }
+
+    .footer {
+        padding: 20px;
+    }
+
+    .portfolio img {
+        max-width: 320px;
+    }
+
+    .header .col-xl-12 {
+        padding-right: 0;
+    }
+
+}
